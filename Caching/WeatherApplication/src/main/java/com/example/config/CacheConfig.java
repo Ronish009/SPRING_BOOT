@@ -18,10 +18,12 @@ public class CacheConfig {
         return new ConcurrentMapCacheManager();
     }*/
 
+/*
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {
         return new LettuceConnectionFactory("localhost", 6379);
     }
+*/
 
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory factory) {
